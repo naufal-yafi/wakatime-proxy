@@ -1,5 +1,10 @@
 # Waktime Proxy
 
+This project to solve wakatime blocked by CORS policy!
+
+![errorlog](.github/assets/error-log.png)
+
+
 ## Table of Contents
 
 - [Waktime Proxy](#waktime-proxy)
