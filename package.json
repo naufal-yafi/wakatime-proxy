@@ -1,7 +1,7 @@
 {
-  "main": "./src/index.ts",
+  "main": "./src/server.ts",
   "scripts": {
-    "start": "bun ts-node ./src/index.ts",
+    "start": "bun ts-node ./src/server.ts",
     "format": "prettier --write ."
   },
   "dependencies": {
