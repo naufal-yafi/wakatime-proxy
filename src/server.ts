@@ -22,12 +22,12 @@ app.get('/', (req: Request, res: Response) => {
   res.status(200).json({ msg: 'OK' });
 });
 
-app.get('/stats/:username/:range', async (req: Request, res: Response) => {
+app.get('/stats/:range', async (req: Request, res: Response) => {
   try {
-    const { username, range } = req.params;
+    const { range } = req.params;
     const token = req.headers['x-api-token'] as string;
 
-    const q = await fetch(`${BASE_URL}/users/${username}/stats/${range}`, {
+    const q = await fetch(`${BASE_URL}/users/current/stats/${range}`, {
       headers: {
         Authorization: `Basic ${Buffer.from(token).toString('base64')}`,
       },

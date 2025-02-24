@@ -4,27 +4,20 @@ This project to solve wakatime blocked by CORS policy!
 
 ![errorlog](.github/assets/error-log.png)
 
-
 ## Table of Contents
 
 - [Waktime Proxy](#waktime-proxy)
   - [Table of Contents](#table-of-contents)
-  - [GET /stats/:username/:range](#get-statsusernamerange)
+  - [GET /stats/:range](#get-statsrange)
     - [Rule](#rule)
-      - [:username](#username)
       - [:range](#range)
       - [headers: x-api-token](#headers-x-api-token)
     - [How to use](#how-to-use)
     - [Response API](#response-api)
 
-## GET /stats/:username/:range
+## GET /stats/:range
 
 ### Rule
-
-#### :username
-
-Get wakatime username: [https://wakatime.com/me](https://wakatime.com/me)  
-Your username wakatime, example `@yourname`
 
 #### :range
 
@@ -40,7 +33,7 @@ Your username wakatime, example `@yourname`
 
 ```ts
 const res = await fetch(
-  'https://wakatime-proxy.vercel.app/stats/@yappiii/all_time',
+  'https://wakatime-proxy.vercel.app/stats/all_time',
   {
     headers: { 'x-api-token': 'YOUR_WAKATIME_API_KEY' },
   },
