@@ -1,9 +1,4 @@
 {
-  "main": "./src/server.ts",
-  "scripts": {
-    "start": "bun ts-node ./src/server.ts",
-    "format": "prettier --write ."
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
